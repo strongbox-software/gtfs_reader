@@ -35,7 +35,7 @@ module GtfsReader
             col :parent_station
 
             col :wheelchair_boarding do |val|
-              if parent_station
+              if :parent_station
                 case val
                 when '2' then :no
                 when '1' then :yes
